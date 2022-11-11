@@ -1,0 +1,11 @@
+.number-list-wrapper {
+    width: 1120px;
+    height: 210px;
+    background: #FFFAF1;
+    border: 1px solid #DCE9E2;
+    border-radius: 6px;
+    &-inner {
+        padding: 60px 120px 60px 120px;
+        display: flex;
+    }
+}
