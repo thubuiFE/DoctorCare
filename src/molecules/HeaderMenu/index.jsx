@@ -21,13 +21,12 @@ const HeaderMenu = ({ color }) => {
               className={item?.key === itemSelected ? "li-selected" : ""}
               style={{ color }}
             >
-              {item?.title}
+              {item?.key === itemSelected ? (
+                <span style={{ borderColor: color }}>{item?.title}</span>
+              ) : (
+                item?.title
+              )}
             </li>
-            {item?.key === itemSelected ? (
-              <div className="item-selected"></div>
-            ) : (
-              <></>
-            )}
           </a>
         ))}
       </ul>

@@ -26,10 +26,10 @@ const HeaderComponent = ({ backgroundColor, logo, color }) => {
         <>
           <HeaderMenu color={color} />
           <Button
-            text="Agendar consulta"
+            text="AGENDE SUA CONSULTA"
             backgroundColor={backgroundColor}
             color={color}
-            borderColor="white"
+            borderColor={color}
           />
         </>
       ) : (
