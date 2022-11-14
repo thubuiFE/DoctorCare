@@ -1,7 +1,46 @@
+@use "../../App.scss" as style;
+
 .header-component-wrapper {
+    width: 100%;
     display: flex;
-    gap: 200px;
+    gap: 150px;
+    position: fixed;
+    padding: 57px 125px 57px 125px ;
+    height: 72px;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1;
     img {
         width: 25%;
+    }
+    .icon-show-menu {
+        width: 40px;
+    }
+}
+
+
+@media only screen and (max-width: 1025px) {
+    .header-component-wrapper {
+        gap: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 920px) {
+    .header-component-wrapper {
+        gap: 40px;
+        padding: 50px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .header-component-wrapper {
+        padding: 24px;
+        img {
+            width: 25%;
+        }
+        .icon-show-menu {
+            width: 40px;
+        }
     }
 }

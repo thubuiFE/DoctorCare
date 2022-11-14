@@ -9,3 +9,19 @@
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 920px) {
+    .footer-wrapper {
+        padding: 80px 50px 80px 50px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .footer-wrapper {
+        display: block;
+        box-sizing: border-box;
+        background-color: style.$primary-color;
+        padding: 60px 24px 60px 24px;
+        height: fit-content;
+    }
+}

@@ -6,3 +6,16 @@
     border: 1px solid #DCE9E2;
     border-radius: 6px;
 }
+
+@media only screen and (max-width: 1025px) {
+  .card-content-wrapper {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+    .card-content-wrapper {
+      width: auto;
+      margin-bottom: 24px;
+    }
+  }

@@ -12,11 +12,11 @@ const TopCenterComponent = () => (
       <SectionText text="BOAS-VINDAS A DOCTORCARE 👋" />
       <TitleContent
         text="Assistência médica simplificada para todos"
-        style={{ fontSize: "52px", fontWeight: "700px", width: "605px" }}
+        style={{ fontSize: "52px", fontWeight: "700px", width: "fit-content" }}
       />
       <DescriptionContent
         text="Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo."
-        style={{ width: "585px", marginBottom: "32px" }}
+        style={{ width: "fit-content", marginBottom: "32px" }}
       />
       <Button
         text="Agende sua consulta"

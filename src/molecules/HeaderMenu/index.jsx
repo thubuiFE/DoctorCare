@@ -5,7 +5,7 @@ import { dataMenu } from "../../dataSources/menuData";
 // styles
 import "./styles.scss";
 
-const HeaderMenu = () => {
+const HeaderMenu = ({ color }) => {
   const [itemSelected, setItemSelected] = useState(0);
 
   return (
@@ -13,15 +13,20 @@ const HeaderMenu = () => {
       <ul>
         {dataMenu?.map((item) => (
           <a
-            href="/"
+            href="#"
             key={item?.key}
             onClick={() => setItemSelected(item?.key)}
           >
-            <li className={item?.key === itemSelected ? "li-selected" : ""}>
+            <li
+              className={item?.key === itemSelected ? "li-selected" : ""}
+              style={{ color }}
+            >
               {item?.title}
             </li>
-            {item?.key === itemSelected && (
+            {item?.key === itemSelected ? (
               <div className="item-selected"></div>
+            ) : (
+              <></>
             )}
           </a>
         ))}

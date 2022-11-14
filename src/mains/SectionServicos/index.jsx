@@ -9,7 +9,7 @@ const SectionServicos = () => (
       <SectionText text="SERVIÇOS" />
       <TitleContent
         text="Como podemos ajudá-lo a se sentir melhor?"
-        style={{ maxWidth: "497px", margin: "0 auto", marginTop: "16px" }}
+        style={{ maxWidth: "90%", margin: "0 auto", marginTop: "16px" }}
       />
     </div>
     <ListCardComponent />

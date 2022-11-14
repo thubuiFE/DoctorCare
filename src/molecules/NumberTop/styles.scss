@@ -11,3 +11,11 @@
     line-height: 150%;
     color: #00856F;
 }
+
+@media only screen and (max-width: 750px) {
+    .number-top {
+        padding: 40px 80px 20px 80px;
+        padding-right: 80px;
+        text-align: center;
+    }
+}
