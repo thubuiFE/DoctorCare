@@ -1,11 +1,12 @@
 import "./styles.scss";
+import NumberTop from "../../molecules/NumberTop";
 
 const NumberList = () => (
   <div className="number-list-wrapper">
     <div className="number-list-wrapper-inner">
-      <NumberList number="+3.500" text="Pacientes atendidos" />
-      <NumberList number="+15" text="Especialistas disponíveis" />
-      <NumberList number="+10" text="Anos no mercado" />
+      <NumberTop number="+3.500" text="Pacientes atendidos" />
+      <NumberTop number="+15" text="Especialistas disponíveis" />
+      <NumberTop number="+10" text="Anos no mercado" />
     </div>
   </div>
 );

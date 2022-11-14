@@ -1,0 +1,24 @@
+.section-contact-wrapper {
+    padding: 160px 123px 160px 123px;
+    display: flex;
+    .section-contact-content {
+       button {
+        margin-top: 50px;
+       }
+    }
+    .section-contact-icon {
+        display: flex;
+        &:nth-child(2) {
+            margin-top: 50px;
+        }
+        &:nth-child(3) {
+            margin-top: 16px;
+        }
+    }
+    .section-contact-icon img{
+        margin-right: 10px;
+    }
+    .section-contact-image {
+        margin-left: auto;
+    }
+}

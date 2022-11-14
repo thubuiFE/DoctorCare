@@ -1,14 +1,18 @@
 import "./App.scss";
-import HeaderComponent from "./components/HeaderComponent";
-import NumberList from "./components/NumberList";
+import TopHeader from "./mains/TopHeader";
+import SectionServicos from "./mains/SectionServicos";
+import SectionSobre from "./mains/SectionSobre";
+import SectionContact from "./mains/SectionContact";
+import Footer from "./mains/Footer";
 
 function App() {
   return (
     <div className="doctor-care-wrapper">
-      <div className="doctor-care-wrapper-inner">
-        <HeaderComponent />
-        <NumberList />
-      </div>
+      <TopHeader />
+      <SectionServicos />
+      <SectionSobre />
+      <SectionContact />
+      <Footer />
     </div>
   );
 }

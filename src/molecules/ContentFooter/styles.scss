@@ -1,0 +1,14 @@
+.content-footer-wrapper {
+    .content-footer {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFAF1;
+        div {
+            &:nth-child(2) {
+                margin-top: 15px;
+            }
+        }
+    }
+}

@@ -1,14 +1,21 @@
 // styles
 import "./styles.scss";
 
-const Button = ({ text, icon, backgroundColor, color }) => (
+const Button = ({
+  text,
+  icon,
+  backgroundColor = "#00856F",
+  color = "#FFFFFF",
+}) => (
   <button
     type="button"
     className="button-wrapper"
     style={{ backgroundColor, color }}
   >
-    {icon ? <image src={icon} alt="icon" /> : <></>}
-    {text}
+    <div>
+      {icon ? <img src={icon} alt="icon" /> : <></>}
+      <span>{text}</span>
+    </div>
   </button>
 );
 

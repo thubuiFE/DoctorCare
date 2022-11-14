@@ -1,0 +1,9 @@
+.list-icon-footer-wrapper {
+    margin-left: auto;
+    // line-height: calc(268px - 100px);
+    img {
+        &:nth-child(1), &:nth-child(2) {
+            margin-right: 40px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@use "../../App.scss" as styles;
+
+.section-sobre-wrapper {
+    display: flex;
+    padding: 160px 125px 160px 125px;
+    background-color: #FFFAF1;
+
+    .section-sobre-content {
+        margin-left: auto;
+    }
+}

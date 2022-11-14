@@ -1,0 +1,11 @@
+@use "../../App.scss" as style;
+
+.footer-wrapper {
+    display: flex;
+    box-sizing: border-box;
+    background-color: style.$primary-color;
+    padding: 80px 123px 80px 123px;
+    height: 268px;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,11 +1,20 @@
 .number-list-wrapper {
-    width: 1120px;
-    height: 210px;
+    width: calc(100% - 250px);
+    
     background: #FFFAF1;
     border: 1px solid #DCE9E2;
     border-radius: 6px;
+    position: absolute;
+    top: 80%;
     &-inner {
-        padding: 60px 120px 60px 120px;
         display: flex;
+        height: 210px;
+        gap: 130px;
+        justify-content: center;
+        align-items: center;
+        .number-top:nth-child(1),  .number-top:nth-child(2){
+            padding-right: 80px;
+            border-right: 1px solid #EAEAEB;
+        }
     }
 }
