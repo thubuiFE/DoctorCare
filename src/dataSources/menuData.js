@@ -1,18 +1,18 @@
 export const dataMenu = [
   {
-    title: "Início",
+    title: "start",
     key: 0,
   },
   {
-    title: "Sobre",
+    title: "about",
     key: 1,
   },
   {
-    title: "Serviços",
+    title: "services",
     key: 2,
   },
   {
-    title: "Depoimentos",
+    title: "depositions",
     key: 3,
   },
 ];
