@@ -2,11 +2,14 @@
 import React, { useState } from "react";
 // dataSources
 import { dataMenu } from "../../dataSources/menuData";
+// context
+import { useLocale } from "../../contexts/LocaleContext";
 // styles
 import "./styles.scss";
 
 const HeaderMenu = ({ color }) => {
   const [itemSelected, setItemSelected] = useState(0);
+  const { localeDataSource } = useLocale();
 
   return (
     <div className="header-menu-wrapper">
@@ -22,9 +25,11 @@ const HeaderMenu = ({ color }) => {
               style={{ color }}
             >
               {item?.key === itemSelected ? (
-                <span style={{ borderColor: color }}>{item?.title}</span>
+                <span style={{ borderColor: color }}>
+                  {localeDataSource[item?.title]}
+                </span>
               ) : (
-                item?.title
+                localeDataSource[item?.title]
               )}
             </li>
           </a>
