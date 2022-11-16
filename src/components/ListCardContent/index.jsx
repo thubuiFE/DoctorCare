@@ -1,22 +1,27 @@
-import CardContent from "../../molecules/CardContent";
-// import { cardContent } from "../../dataSources/cardContent";
-import "./styles.scss";
-import { useSelector, useDispatch } from "react-redux";
-import { fetchDataContent } from "../../reducer/fetchDataMenu";
+// libs
 import { useEffect } from "react";
+import useSWR from "swr";
+import { useSelector, useDispatch } from "react-redux";
+import CardContent from "../../molecules/CardContent";
+// reducers
+import { fetchDataContent } from "../../reducer/fetchDataMenu";
+// others
+import "./styles.scss";
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const ListCardComponent = () => {
+  // Demo reduxToolkit
   const dataResponse = useSelector((state) => state?.fetchData?.dataContent);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchDataContent());
-  }, []);
+  // Demo useSWR
+  const { data, error } = useSWR("http://localhost:3000/card_content", fetcher);
 
   return (
-    dataResponse?.length > 0 && (
+    data?.length > 0 && (
       <div className="list-card-component-wrapper">
-        {dataResponse.map((item, index) => (
+        {data.map((item, index) => (
           <CardContent
             text={item?.title}
             description={item?.description}
